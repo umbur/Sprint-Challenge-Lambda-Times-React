@@ -1,6 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types'
+
 import Tab from './Tab';
+
 const Tabs = props => {
+  console.log(props)
   return (
     <div className="tabs">
       <div className="topics">
@@ -19,6 +23,12 @@ const Tabs = props => {
     </div>
   );
 };
-
 // Make sure to use PropTypes to validate your types!
+Tab.propTypes = {
+    selectTabHandler: PropTypes.func,
+    selectedTab: PropTypes.string,
+    tab: PropTypes.string
+}
+
+
 export default Tabs;

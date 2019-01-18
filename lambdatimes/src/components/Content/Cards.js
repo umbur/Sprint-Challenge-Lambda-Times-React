@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
+
 import Card from './Card';
 
 const Cards = props => {
-  //console.log('Cards.js:', props)
+  console.log('Cards.js:', props)
   return (
     <div className="cards-container">
       {/* Using the cards prop, map over the list creating a 
@@ -17,5 +19,13 @@ const Cards = props => {
 }
 
 // Make sure you include prop types for all of your incoming props
+Card.propTypes = {
+  Cards: PropTypes.shape({
+      headline: PropTypes.string,
+      tab: PropTypes.string,
+      img: PropTypes.string,
+      author: PropTypes.string
+  })
+}
 
 export default Cards;
