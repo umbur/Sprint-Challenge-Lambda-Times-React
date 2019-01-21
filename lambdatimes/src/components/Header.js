@@ -28,9 +28,9 @@ const HeaderContainer = styled.div`
       }
 `
 const Span = styled.span`
-text-align: right;
-margin-right: 25px;
-flex: 1;
+  text-align: right;
+  margin-right: 25px;
+  flex: 1;
 `
 
 const Header = () => {

@@ -5,7 +5,7 @@ const Card = props => {
   //console.log('card.js:',props)
   return (
     <div className="card">
-      <div className="headline">{/* headline goes here */}</div>
+      <div className="headline">{props.cards.headline}</div>
       <div className="author">
         <div className="img-container">
           <img src={props.cards.img}
